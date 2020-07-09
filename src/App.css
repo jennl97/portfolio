@@ -15,11 +15,15 @@
 }
 
 body{
- font-family: "Oswald";
+ font-family: "Raleway";
+}
+
+p{
+  font-size: var(--fontsize-p);
 }
 
 h1, h2, h3, h4, h5, h6{
-  font-family: "Raleway";
+  font-family: "Oswald";
 }
 
 nav{
@@ -34,15 +38,26 @@ nav ul{
   text-align: center;
   list-style-type: none;
   text-decoration: none;
-  
-}
+ }
 
 nav ul li{
   margin: 40px;
+  
   }
 
 nav ul li a{
   color: white !important;
+  text-decoration: none;
+  font-family: 'Oswald';
+}
+
+nav ul li a:hover{
+  color: purple !important;
+}
+
+.active a{
+  font-weight: 700;
+  color: purple !important;
 }
 
 .App{
@@ -57,9 +72,6 @@ nav ul li a{
   flex: var(--condiv-flex);
 }
 
-.active{
-  font-weight: 700;
-}
 
 .socialMedia{
   margin-top: 40px;
@@ -92,3 +104,30 @@ nav ul li a{
   font-size: 20px;
   padding-top: 30px;
 }
+
+.aboutHeader{
+  margin-bottom: 1em;
+}
+
+.subHeader{
+  margin-bottom: .5em;
+}
+
+.card{
+  border: 0px solid #9a9b9c;
+  display: flex;
+  margin: 30px 0px 30px 0px;
+  padding: 5px;
+}
+
+.card:hover{
+  color: #1b1b20;
+  background-color: white;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.secondText{
+  font-family: 'Raleway';
+  padding-bottom: 5px;
+}
+

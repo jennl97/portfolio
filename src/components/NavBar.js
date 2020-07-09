@@ -12,9 +12,9 @@ class NavBar extends Component{
 
     //function to add CSS class of .active to the NavItem
     activeItem=(item)=>{
-        if(this.state.NavItemId.length > 0){
-            document.getElementById(this.state.NavItemActive).classList.remove('active');
-        }
+        // if(this.state.NavItemId.length > 0){
+        //     document.getElementById(this.state.NavItemActive).classList.remove('active');
+        // }
 
         this.setState({'NavItemActive': item}, () =>{
             document.getElementById(this.state.NavItemActive).classList.add('active');
@@ -30,6 +30,7 @@ class NavBar extends Component{
                     <NavItem item = 'About' tolink='/about' active={this.activeItem}>About</NavItem>
                     <NavItem item = 'Education' tolink='/education' active={this.activeItem}>Education</NavItem>
                     <NavItem item = 'Skills' tolink='/skills' active={this.activeItem}>Skills</NavItem>
+                    <NavItem item = 'Projects' tolink='/projects' active={this.activeItem}>Projects</NavItem>
                     <NavItem item = 'Contact' tolink='/contact' active={this.activeItem}>Contact</NavItem>
                     <SocialMedia />
                 </ul>
